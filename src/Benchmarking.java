@@ -3,7 +3,7 @@ public class Benchmarking {
     private MetodosOrdenamiento mOrdenamiento;
 
     public Benchmarking() {
-        long CurrentMillis = System.currentTimeMillis();
+        /*long CurrentMillis = System.currentTimeMillis();
         long currentNano = System.nanoTime();
         System.out.println(CurrentMillis);
         System.out.println(currentNano);
@@ -17,7 +17,7 @@ public class Benchmarking {
         double tiempoDuracionNano = medirCoCurrentTime(tarea);
 
         System.out.println("Tiempo de ejecución en milisegundos: " + tiempoDuracionMilis + " ms");
-        System.out.println("Tiempo de ejecución en nanosegundos: " + tiempoDuracionNano + " ns");
+        System.out.println("Tiempo de ejecución en nanosegundos: " + tiempoDuracionNano + " ns");*/
     }
 
     private int[] generarArregloAleatorio(int tamaño) {

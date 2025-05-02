@@ -1,17 +1,13 @@
-## Cree una clase MeodosOrdenamiento
-## Crear un metodo sort bubble que reciba un 
-## arreglo el metodo solo imprima un mensaje
-
 class MetodosOrdenamiento():
     def sort_bubble(self, array):
-        print ("-----Bubble sort-----")
+        print("-----Bubble sort-----")
         arreglo = array.copy()
         n = len(arreglo)
         for i in range(n):
-            for j in range(i+1,n):
-                if arreglo[i]> arreglo[j]:
-                    arreglo[i], arreglo[j] = arreglo[j], arreglo[i]                    
-        return 
+            for j in range(i+1, n):
+                if arreglo[i] > arreglo[j]:
+                    arreglo[i], arreglo[j] = arreglo[j], arreglo[i]
+        return arreglo
     
     def sort_bubble_mejorado_optitimizado(self, array):
         print ("-----Bubble sort mejorado-----")
@@ -27,13 +23,15 @@ class MetodosOrdenamiento():
                 return arreglo
             return arreglo
     def sort_metodo_seleccion(self, array):
-        print ("-----Selecion-----")
+        print("-----Seleccion-----")
         arreglo = array.copy()
-        n = len(arreglo)
+        n = len(arreglo)  # Esto es lo que falta o está mal ubicado
+
         for i in range(n):
             min = i
-            for j in range (i+1, n):
-                if arreglo[j]< arreglo[min]:
+            for j in range(i + 1, n):
+                if arreglo[j] < arreglo[min]:
                     min = j
-                arreglo[i], arreglo[min] = arreglo[min], arreglo[i]
+        arreglo[i], arreglo[min] = arreglo[min], arreglo[i]
+
         return arreglo
